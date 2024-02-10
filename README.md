@@ -40,7 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Preview
 
-- Vercel : `https://reddit-doppel.vercel.app/`
+- Vercel : `https://financial-dashboard-pink.vercel.app/`
 
 ## API
 - 
