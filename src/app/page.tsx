@@ -1,12 +1,3 @@
-import Image from "next/image";
-import {
-  Card,
-  CardContent,
-  CardSubTitle,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "~/components/molecules/card/card";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import RightContent from "~/components/templates/right-content";
 import CardBalance from "~/components/organism/cards/card-balance";
@@ -23,10 +14,8 @@ import CardUpgrade from "~/components/organism/cards/card-upgrade";
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
-      {/* dashboard */}
-      <div className="dashboard-wrapper flex">
+      <div className="flex">
         <div className="content flex flex-col p-6 w-full">
-          {/* header */}
           <div className="flex justify-between items-center mb-4">
             <div className="flex flex-col space-y-1.5">
               <h1 className="text-3xl font-bold">Hello, Awil .F</h1>
@@ -41,7 +30,6 @@ export default function Home() {
               />
             </Button>
           </div>
-          {/* content */}
           <div className="flex flex-col gap-3">
             <section className="flex w-full justify-between gap-6">
               <CardCredit />

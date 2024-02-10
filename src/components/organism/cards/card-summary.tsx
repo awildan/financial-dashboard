@@ -6,7 +6,6 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-  CardSubTitle,
 } from "~/components/molecules/card/card";
 
 const CardSummary = () => {

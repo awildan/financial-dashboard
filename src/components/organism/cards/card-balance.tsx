@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "~/components/molecules/card/card";
 import { ArrowUpCircleIcon } from "@heroicons/react/24/outline";
-import { Button } from "~/components/atoms/button/button";
 import {
   Bar,
   BarChart,
@@ -76,7 +75,13 @@ const CardBalance = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const time = setTimeout(() => {
+      setMounted(true);
+    }, 500);
+
+    return () => {
+      clearTimeout(time);
+    };
   }, []);
 
   if (!mounted) {
@@ -92,7 +97,7 @@ const CardBalance = () => {
       </CardHeader>
       <CardContent className="flex grow">
         <div className="flex flex-col gap-1">
-          <h3 className="text-2xl font-bold">$564</h3>
+          <h3 className="text-2xl font-bold">$675</h3>
           <div className="flex justify-between items-center border-b gap-1 ">
             <Image
               src="https://blush.design/api/download?shareUri=MadFovFgY6SoGHWl&c=Hair_0%7E8b542f_Skin_0%7Ec09671&w=800&h=800&fm=png"
@@ -119,7 +124,6 @@ const CardBalance = () => {
               <p className="text-xs text-gray-500">+20.1%</p>
             </div>
           </div>
-
           <p className="text-xs font-extralight text-gray-500">
             Increase from last month
           </p>

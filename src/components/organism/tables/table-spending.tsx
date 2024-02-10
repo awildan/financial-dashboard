@@ -1,18 +1,5 @@
 import React from "react";
-import { EllipsisVerticalIcon } from "@heroicons/react/24/outline";
-import { Button } from "~/components/atoms/button/button";
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "~/components/ui/table";
-import { receiverAvatar, senderAvatar } from "~/lib/constant";
-import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
+import { Table, TableBody, TableCell, TableRow } from "~/components/ui/table";
 import Image from "next/image";
 
 const spending = [

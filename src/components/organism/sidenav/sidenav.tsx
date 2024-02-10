@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import NavLinks from "~/components/molecules/nav/navlink";
-import Image from "next/image";
 import { Button } from "~/components/atoms/button/button";
 import { ArrowRightStartOnRectangleIcon } from "@heroicons/react/24/outline";
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
@@ -12,8 +11,6 @@ const SideNav = () => {
       <Link className="w-full text-center" href="/">
         <h1 className="text-3xl font-bold">S.</h1>
       </Link>
-      {/* */}
-
       <div className="flex flex-col gap-6 h-auto rounded-full bg-indigo-50 p-1">
         <NavLinks />
       </div>

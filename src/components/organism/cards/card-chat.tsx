@@ -41,7 +41,7 @@ const CardChat = () => {
     },
     {
       role: "user",
-      content: "Wait, I need sleep a bit :)",
+      content: "Wait, I need sleep a bit hehe",
       avatar: senderAvatar,
     },
   ]);

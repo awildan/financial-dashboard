@@ -18,7 +18,7 @@ import Link from "next/link";
 
 const CardSpending = () => {
   return (
-    <Card>
+    <Card className="caret-transparent">
       <CardHeader className="p-4">
         <CardTitle className="flex items-center justify-between">
           <p className="text-lg">Latest Spending</p>

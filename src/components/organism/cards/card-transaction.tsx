@@ -5,14 +5,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-  CardSubTitle,
 } from "~/components/molecules/card/card";
 import TableTransaction from "../tables/table-transaction";
 import { Button } from "~/components/atoms/button/button";
 
 const CartTransaction = () => {
   return (
-    <Card className="bg-white w-1/2 max-h-[480px] flex flex-col">
+    <Card className="bg-white w-1/2 max-h-[480px] flex flex-col caret-transparent">
       <CardHeader className="py-4">
         <CardTitle>
           <div className="flex justify-between items-center gap-2">

@@ -5,9 +5,6 @@ import {
   TableBody,
   TableCaption,
   TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
   TableRow,
 } from "~/components/ui/table";
 import { receiverAvatar, senderAvatar } from "~/lib/constant";
@@ -76,12 +73,6 @@ const TableTransaction = () => {
   return (
     <Table>
       <TableCaption>A list of your recent invoices.</TableCaption>
-      {/* <TableHeader>
-        <TableRow>
-          <TableHead className="w-[100px]">Invoice</TableHead>
-          <TableHead className="text-right">Amount</TableHead>
-        </TableRow>
-      </TableHeader> */}
       <TableBody>
         {invoices.map((invoice) => (
           <TableRow

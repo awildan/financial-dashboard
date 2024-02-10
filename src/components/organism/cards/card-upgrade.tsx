@@ -6,10 +6,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-  CardSubTitle,
 } from "~/components/molecules/card/card";
-import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
-import { senderAvatar } from "~/lib/constant";
 import Image from "next/image";
 
 const CardUpgrade = () => {

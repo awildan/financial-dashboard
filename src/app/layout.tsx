@@ -9,14 +9,13 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  // flex h-screen flex-col md:flex-row md:overflow-hidden
   return (
     <html lang="en">
       <body
         className={`${poppins.className} container bg-indigo-50 text-foreground p-0`}
       >
         <div className="flex h-screen flex-row">
-          <div className="w-20 flex-none fixed">
+          <div className="w-20 flex-none fixed z-10">
             <SideNav />
           </div>
           <div className="ml-20 flex-grow">{children}</div>

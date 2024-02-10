@@ -3,17 +3,12 @@ import React from "react";
 import {
   Card,
   CardContent,
-  CardSubTitle,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "~/components/molecules/card/card";
 import { Button } from "~/components/atoms/button/button";
-import { useEffect, useState } from "react";
-import { CardSkeleton } from "~/components/molecules/card/card-skeleton";
-import Checkbox from "~/components/atoms/checkbox/checkbox";
+import { useState } from "react";
 import CheckboxGroup from "~/components/molecules/checkbox-group/checkbox-group";
-import DateTime from "~/components/atoms/date/date-time";
 import TimeSpan from "~/components/molecules/time-span/time-span";
 import { PlusIcon } from "@heroicons/react/24/outline";
 
@@ -39,7 +34,7 @@ const CardWishlist = () => {
           </Button>
         </div>
 
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid max-xl:grid-cols-2 grid-cols-3 gap-2">
           <CheckboxGroup
             id="macbook"
             name="macbook"
